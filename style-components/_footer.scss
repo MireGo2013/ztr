@@ -1,0 +1,87 @@
+.footer_container {
+  background: #313280;
+  padding: 129px 130px;
+}
+.content_footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+.footer_text {
+  padding-right: 150px;
+  h2 {
+    font-size: 2.1rem;
+    line-height: 2.6rem;
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
+.social_list_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_item {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  text-align: center;
+  p {
+    margin-bottom: 20px;
+  }
+  &:first-child {
+    margin-right: 100px;
+  }
+}
+
+.social_btn {
+  width: 131px;
+  height: 119px;
+  border: none;
+  background: none;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.telega {
+  background-image: url("../assets/social/telega.png");
+}
+
+.twitte {
+  background-image: url("../assets/social/twitter.png");
+}
+
+.line {
+  border: 1px solid #c02e5b;
+  margin-bottom: 40px;
+}
+
+.copyright_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+}
+
+.contact_wraprrep {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p + p {
+    margin-left: 50px;
+  }
+}

@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Bebas Neue", cursive;
+  font-size: 10px;
+  color: white;
+}
+
+.header_container {
+  height: 1080px;
+  background-image: url("../assets/bg/bg1.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.navigation_container {
+  height: 89px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba($color: #313280, $alpha: 0.5);
+  box-shadow: 0px 3px 3px 3px rgba($color: #2d2d74, $alpha: 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.logo_container {
+  width: 50px;
+  height: 75px;
+  margin-left: 90px;
+
+  .logo {
+    width: 100%;
+  }
+}
+
+.navigation_list {
+  display: flex;
+  list-style: none;
+  font-size: 1.4rem;
+
+  & li + li {
+    color: white;
+    margin-left: 50px;
+  }
+  & li a {
+    color: white;
+  }
+  & li a:active {
+    color: rgb(13, 78, 151);
+  }
+}
+
+.btn_buy {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 83px;
+  border: none;
+  background: none;
+  background-image: url("../assets/btn/button.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.content_header_wrapper {
+  width: 982px;
+  height: 515px;
+  margin: 0 auto;
+  padding-top: 218px;
+  .title {
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .title + p {
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
+    margin-bottom: 44px;
+  }
+}
+
+.key_copy_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 44px;
+  .copy_btn {
+    width: 30px;
+    height: 35px;
+    margin-right: 5px;
+    border: none;
+    background: none;
+    background-image: url("../assets/btn/copy.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  span {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+}
+
+.btn_action_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn_action {
+    width: 219px;
+    height: 58px;
+    border-radius: 29px;
+    border: none;
+    background: none;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+    & + .btn_action {
+      margin-left: 22px;
+    }
+
+    &.buy {
+      background-image: url("../assets/btn/but1.png");
+    }
+    &.swap {
+      background-image: url("../assets/btn/but2.png");
+    }
+    &.join {
+      background-image: url("../assets/btn/but3.png");
+    }
+
+    a {
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      width: 100%;
+      height: 100%;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+.lang_menu_wrapper {
+  width: 128px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  background: rgba($color: #040000, $alpha: 0.5);
+  position: absolute;
+  bottom: 49px;
+  right: 70px;
+}
+
+.selected_lang_wrapper {
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba($color: #040000, $alpha: 0.5);
+
+  .lang_title {
+    margin-right: 37px;
+  }
+}
+.lang_menu_wrapper.active .drop_down_menu {
+  display: block;
+}
+.lang_menu_wrapper.active .stroke {
+  transform: rotate(-180deg);
+}
+
+.icon_lang_wrapper {
+  width: 29px;
+  height: 20px;
+  margin: 5px 6px 5px 7px;
+
+  & img {
+    width: 100%;
+    max-height: 100%;
+  }
+}
+
+.drop_down_menu {
+  display: none;
+  width: 100%;
+  list-style: none;
+
+  .item_list {
+    display: flex;
+    padding: 3px 0;
+
+    &:hover {
+      background: rgba($color: #040000, $alpha: 0.4);
+      //   opacity: 0.4;
+    }
+  }
+}
