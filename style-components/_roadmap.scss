@@ -1,5 +1,4 @@
 .roadmap_container {
-  height: 1080px;
   background-image: url("../assets/bg/bg.png");
   background-repeat: repeat;
   background-position: center;
@@ -9,56 +8,104 @@
 }
 
 .gagarin_wrapper {
-  width: 600px;
-  height: 900px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/bg/spacemen.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: initial;
+  transform: translateY(250px);
   position: absolute;
-  right: 50px;
-  bottom: -20%;
-  z-index: 0;
-  img {
-    width: 100%;
-    max-height: 100%;
-  }
+  top: 0;
 }
 
 .roudmap_content_wrapper {
-  height: 100%;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   h2 {
-    font-size: 2.4rem;
-    line-height: 2.5rem;
+    font-size: 4.8rem;
+    line-height: 5.2rem;
   }
   p {
-    font-size: 1.6rem;
-    line-height: 1.7rem;
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+    padding-bottom: 90px;
   }
 
   .left_content {
     text-align: end;
-    padding-top: 100px;
-    p {
-      margin-bottom: 70px;
-    }
+    z-index: 1;
   }
 
   .right_content {
     text-align: start;
-    padding-bottom: 100px;
     z-index: 1;
+
     .title_red {
       color: #c02e5b;
-    }
-
-    p {
-      margin-bottom: 50px;
     }
   }
 
   .red_line {
-    height: 60%;
+    height: calc(100vh + 180px);
     border: 1px solid #c02e5b;
-    margin: 0 15px;
+    z-index: 1;
+    margin: 0 10px;
+  }
+}
+
+@include respond-to(max-mini) {
+  .roudmap_content_wrapper {
+    padding: 30px 5px;
+    h2 {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      padding-bottom: 25px;
+    }
+    .red_line {
+      height: calc(100vh + 80px);
+    }
+  }
+}
+
+@include respond-to(mini-midle) {
+  .roudmap_content_wrapper {
+    padding: 45px 5px;
+    h2 {
+      font-size: 2.2rem;
+      line-height: 3.1rem;
+    }
+    p {
+      font-size: 1.7rem;
+      line-height: 2.1rem;
+      padding-bottom: 35px;
+    }
+    .red_line {
+      height: calc(100vh + 110px);
+    }
+  }
+}
+
+@include respond-to(max-midle) {
+  .roudmap_content_wrapper {
+    padding: 45px 5px;
+    h2 {
+      font-size: 2.7rem;
+      line-height: 3.5rem;
+    }
+    p {
+      font-size: 2.2rem;
+      line-height: 2.7rem;
+      padding-bottom: 50px;
+    }
+    .red_line {
+      height: calc(100vh + 140px);
+    }
   }
 }

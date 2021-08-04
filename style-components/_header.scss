@@ -1,19 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-body {
-  font-family: "Bebas Neue", cursive;
-  font-size: 10px;
-  color: white;
-}
-
 .header_container {
   height: 1080px;
   background-image: url("../assets/bg/bg1.png");
@@ -21,10 +5,18 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+  @include respond-to(max-large) {
+    height: 880px;
+  }
+
+  @include respond-to(midle) {
+    height: 900px;
+  }
 }
 
 .navigation_container {
-  height: 89px;
+  height: 90px;
+  padding: 5px 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,22 +27,82 @@ body {
   left: 0;
   right: 0;
   z-index: 2;
+  @include respond-to(max-large) {
+    height: 85px;
+    padding: 5px 50px;
+  }
+  @include respond-to(max-midle) {
+    height: 80px;
+    padding: 5px 30px;
+  }
+  @include respond-to(max-midle) {
+    height: 70px;
+    padding: 5px 30px;
+    justify-content: center;
+  }
+  @include respond-to(midle) {
+    height: 60px;
+    padding: 5px 20px;
+  }
+  @include respond-to(mini-midle) {
+    height: 55px;
+    padding: 3px 10px;
+  }
+}
+
+.flex_right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  @include respond-to(mini-midle) {
+    display: none;
+  }
+}
+
+.flex-left {
+  flex: 1;
+  @include respond-to(max-large) {
+    margin-right: 10px;
+  }
+  @include respond-to(max-midle) {
+    margin-right: 7px;
+  }
+  @include respond-to(mini-midle) {
+    margin-right: 5px;
+  }
 }
 
 .logo_container {
   width: 50px;
   height: 75px;
-  margin-left: 90px;
 
   .logo {
     width: 100%;
+    max-height: 100%;
+  }
+  @include respond-to(max-large) {
+    width: 45px;
+    height: 70px;
+  }
+  @include respond-to(max-midle) {
+    width: 35px;
+    height: 60px;
+  }
+  @include respond-to(midle) {
+    width: 30px;
+    height: 55px;
+  }
+  @include respond-to(mini-midle) {
+    width: 25px;
+    height: 50px;
   }
 }
 
 .navigation_list {
   display: flex;
   list-style: none;
-  font-size: 1.4rem;
+  font-size: 2.8rem;
+  line-height: 3rem;
 
   & li + li {
     color: white;
@@ -62,13 +114,43 @@ body {
   & li a:active {
     color: rgb(13, 78, 151);
   }
+  @include respond-to(max-large) {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    margin-right: 10px;
+    & li + li {
+      margin-left: 40px;
+    }
+  }
+  @include respond-to(max-midle) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-right: 7px;
+    & li + li {
+      margin-left: 15px;
+    }
+  }
+  @include respond-to(midle) {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    margin-right: 0;
+    & li + li {
+      margin-left: 10px;
+    }
+  }
+  @include respond-to(mini-midle) {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    & li + li {
+      margin-left: 5px;
+    }
+  }
 }
 
 .btn_buy {
   width: 150px;
   height: 50px;
   border-radius: 30px;
-  margin-right: 83px;
   border: none;
   background: none;
   background-image: url("../assets/btn/button.png");
@@ -84,25 +166,105 @@ body {
   &:active {
     transform: scale(0.98);
   }
+
+  @include respond-to(max-large) {
+    width: 140px;
+    height: 45px;
+  }
+
+  @include respond-to(midle) {
+    width: 100px;
+    height: 40px;
+  }
+  @include respond-to(mini-midle) {
+    width: 80px;
+    height: 35px;
+  }
 }
 
 .content_header_wrapper {
-  width: 982px;
-  height: 515px;
+  height: 100%;
   margin: 0 auto;
-  padding-top: 218px;
+  padding: 218px 10px 0 10px;
   .title {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 10rem;
+    line-height: 11rem;
     letter-spacing: 1rem;
     text-align: center;
     margin-bottom: 50px;
   }
   .title + p {
-    font-size: 2.3rem;
-    line-height: 2.3rem;
+    font-size: 4.2rem;
+    line-height: 4.3rem;
     text-align: center;
     margin-bottom: 44px;
+  }
+  @include respond-to(max-large) {
+    padding-top: 200px;
+    .title {
+      font-size: 9.8rem;
+      line-height: 10.7rem;
+      margin-bottom: 45px;
+    }
+    .title + p {
+      font-size: 4rem;
+      line-height: 4rem;
+      margin-bottom: 40px;
+    }
+  }
+  @include respond-to(max-midle) {
+    padding-top: 170px;
+    .title {
+      font-size: 9rem;
+      line-height: 10rem;
+      margin-bottom: 40px;
+    }
+    .title + p {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  @include respond-to(midle) {
+    padding-top: 150px;
+    .title {
+      font-size: 6.5rem;
+      line-height: 7.2rem;
+      margin-bottom: 30px;
+    }
+    .title + p {
+      font-size: 2.2rem;
+      line-height: 2.7rem;
+      margin-bottom: 25px;
+    }
+  }
+
+  @include respond-to(mini-midle) {
+    padding-top: 120px;
+    .title {
+      font-size: 3.5rem;
+      line-height: 4rem;
+      margin-bottom: 25px;
+    }
+    .title + p {
+      font-size: 1.9rem;
+      line-height: 2.3rem;
+      margin-bottom: 20px;
+    }
+  }
+  @include respond-to(max-mini) {
+    padding-top: 100px;
+    .title {
+      font-size: 3rem;
+      line-height: 3.6rem;
+      margin-bottom: 25px;
+    }
+    .title + p {
+      font-size: 1.7rem;
+      line-height: 2rem;
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -127,8 +289,39 @@ body {
     }
   }
   span {
-    font-size: 1.3rem;
-    line-height: 1.4rem;
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+  }
+
+  @include respond-to(max-large) {
+    margin-bottom: 40px;
+    span {
+      font-size: 2.4rem;
+      line-height: 2.5rem;
+    }
+  }
+  @include respond-to(max-midle) {
+    margin-bottom: 35px;
+    span {
+      font-size: 2rem;
+      line-height: 2.3rem;
+    }
+  }
+
+  @include respond-to(midle) {
+    margin-bottom: 30px;
+    span {
+      font-size: 1.7rem;
+      line-height: 2rem;
+    }
+  }
+
+  @include respond-to(mini-midle) {
+    margin-bottom: 25px;
+    span {
+      font-size: 1.5rem;
+      line-height: 1.9rem;
+    }
   }
 }
 
@@ -136,6 +329,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10px;
   .btn_action {
     width: 219px;
     height: 58px;
@@ -146,6 +340,9 @@ body {
     background-position: center;
     background-size: cover;
     cursor: pointer;
+    font-size: 2.8rem;
+    line-height: 3rem;
+    font-family: "Bebas Neue", cursive;
 
     & + .btn_action {
       margin-left: 22px;
@@ -162,8 +359,6 @@ body {
     }
 
     a {
-      font-size: 1.4rem;
-      line-height: 1.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -175,27 +370,86 @@ body {
       transform: scale(0.98);
     }
   }
+
+  @include respond-to(max-large) {
+    .btn_action {
+      width: 210px;
+      height: 55px;
+      font-size: 2.6rem;
+      line-height: 2.7rem;
+    }
+  }
+  @include respond-to(max-midle) {
+    .btn_action {
+      width: 180px;
+      height: 45px;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      & + .btn_action {
+        margin-left: 15px;
+      }
+    }
+  }
+  @include respond-to(mini-midle) {
+    .btn_action {
+      width: 150px;
+      height: 37px;
+      font-size: 1.7rem;
+      line-height: 2rem;
+      & + .btn_action {
+        margin-left: 10px;
+      }
+    }
+  }
 }
 
 .lang_menu_wrapper {
   width: 128px;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+  line-height: 1.9rem;
   background: rgba($color: #040000, $alpha: 0.5);
   position: absolute;
-  bottom: 49px;
-  right: 70px;
+  top: calc(100% - 150px);
+  left: calc(100% - 138px);
+  @include respond-to(max-midle) {
+    width: 110px;
+    left: calc(100% - 120px);
+  }
+
+  @include respond-to(mini-midle) {
+    width: 100px;
+    left: calc(100% - 110px);
+  }
+  @include respond-to(max-mini) {
+    width: 90px;
+    left: calc(100% - 100px);
+  }
 }
 
 .selected_lang_wrapper {
-  height: 30px;
+  height: 35px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   background: rgba($color: #040000, $alpha: 0.5);
 
   .lang_title {
-    margin-right: 37px;
+    margin-right: 35px;
+  }
+  .stroke_wrapper {
+    pointer-events: none;
+  }
+
+  @include respond-to(mini-midle) {
+    .lang_title {
+      margin-right: 30px;
+    }
+  }
+  @include respond-to(max-mini) {
+    .lang_title {
+      margin-right: 25px;
+    }
   }
 }
 .lang_menu_wrapper.active .drop_down_menu {
@@ -206,6 +460,7 @@ body {
 }
 
 .icon_lang_wrapper {
+  pointer-events: none;
   width: 29px;
   height: 20px;
   margin: 5px 6px 5px 7px;
@@ -213,6 +468,13 @@ body {
   & img {
     width: 100%;
     max-height: 100%;
+  }
+
+  @include respond-to(mini-midle) {
+    width: 20px;
+  }
+  @include respond-to(max-mini) {
+    width: 16px;
   }
 }
 
@@ -223,11 +485,15 @@ body {
 
   .item_list {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     padding: 3px 0;
 
+    .lang_title {
+      pointer-events: none;
+    }
     &:hover {
       background: rgba($color: #040000, $alpha: 0.4);
-      //   opacity: 0.4;
     }
   }
 }

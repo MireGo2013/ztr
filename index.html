@@ -5,46 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>TZR</title>
   </head>
   <body>
     <header class="header_container">
       <nav class="navigation_container">
-        <div class="logo_container">
-          <img class="logo" src="./assets/logo/Logo.png" alt="logo" />
+        <div class="flex-left">
+          <div class="logo_container">
+            <img class="logo" src="./assets/logo/Logo.png" alt="logo" />
+          </div>
         </div>
         <ul class="navigation_list">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">TOKENOMICS</a></li>
-          <li><a href="#">ROADMAP</a></li>
-          <li><a href="#">TEAM</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#" class="lng_home_nav">HOME</a></li>
+          <li><a href="#about" class="lng_about_nav">ABOUT</a></li>
+          <li><a href="#tokenomics" class="lng_token_nav">TOKENOMICS</a></li>
+          <li><a href="#roadmap" class="lng_roadmap_nav">ROADMAP</a></li>
+          <li><a href="#team" class="lng_team_nav">TEAM</a></li>
+          <li><a href="#footer" class="lng_contact_nav">CONTACT</a></li>
         </ul>
-        <button class="btn_buy"><a href="#"></a></button>
+        <div class="flex_right">
+          <button class="btn_buy">
+            <a
+              href="https://bscscan.com/token/0xdd71a543245a2ff8bda8cf02b4f9ad2d2f196792"
+              target="_blank"
+            ></a>
+          </button>
+        </div>
       </nav>
       <div class="content_header_wrapper">
-        <h1 class="title">TO INFINITY AND BEYOND</h1>
-        <p>
-          experience the next generation cryptocurrency token that automatically
-          reward you for holding
+        <h1 class="title lng_title_header">TO INFINITY AND BEYOND</h1>
+        <p class="lng_phrase_header">
+          experience the next generation cryptocurrency token<br />
+          that automatically reward you for holding
         </p>
         <div class="key_copy_wrapper">
           <button class="copy_btn"></button>
           <span>0xDd71a543245a2Ff8bdA8cF02b4f9aD2D2F196792</span>
         </div>
         <div class="btn_action_wrapper">
-          <button class="btn_action buy"><a href="#">buy tzr</a></button>
-          <button class="btn_action swap"><a href="#">swap tzr</a></button>
-          <button class="btn_action join"><a href="#">join telegram</a></button>
+          <button class="btn_action buy">
+            <a
+              href="https://bscscan.com/token/0xdd71a543245a2ff8bda8cf02b4f9ad2d2f196792"
+              target="_blank"
+              class="lng_buy_header"
+              >buy tzr</a
+            >
+          </button>
+          <button class="btn_action swap">
+            <a
+              class="lng_swap_header"
+              href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xdd71a543245a2ff8bda8cf02b4f9ad2d2f196792"
+              target="_blank"
+              >swap tzr</a
+            >
+          </button>
+          <button class="btn_action join">
+            <a
+              class="lng_join_header"
+              href="https://t.me/TREZOR_FINANCE"
+              target="_blank"
+              >join telegram</a
+            >
+          </button>
         </div>
-        <div class="lang_menu_wrapper active">
+        <div class="lang_menu_wrapper">
           <div class="selected_lang_wrapper">
             <div class="icon_lang_wrapper">
               <img src="./assets/lang/eng.png" alt="eng" />
             </div>
-            <div class="lang_title">EN</div>
-            <div>
+            <div class="lang_title" data-lang="en">en</div>
+            <div class="stroke_wrapper">
               <img
                 class="stroke"
                 src="./assets/lang/Language.png"
@@ -57,64 +87,65 @@
               <div class="icon_lang_wrapper">
                 <img src="./assets/lang/eng.png" alt="eng" />
               </div>
-              <div class="lang_title">EN</div>
+              <div class="lang_title">en</div>
             </li>
             <li class="item_list">
               <div class="icon_lang_wrapper">
                 <img src="./assets/lang/ru.png" alt="eng" />
               </div>
-              <div class="lang_title">RU</div>
+              <div class="lang_title">ru</div>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <section class="about_container">
+    <section id="about" class="about_container">
       <ul class="data_profit_wrapper">
         <li>
           <p class="profit">$0.000000000106110</p>
-          <p class="profit_discription">current price</p>
+          <p class="profit_discription lng_current_price">current price</p>
         </li>
         <li>
           <p class="profit">235</p>
-          <p class="profit_discription">Holders</p>
+          <p class="profit_discription lng_holders">holders</p>
         </li>
         <li>
           <p class="profit">1,000,000,000,000,000</p>
-          <p class="profit_discription">supply</p>
+          <p class="profit_discription lng_supply">supply</p>
         </li>
         <li>
           <p class="profit">$106,110</p>
-          <p class="profit_discription">market cap</p>
+          <p class="profit_discription lng_capitaliz">market cap</p>
         </li>
       </ul>
       <div class="content_about_wrapper">
         <div class="advantages_wrapper">
-          <h2>Community driven</h2>
-          <p>
-            community driven & fair launch. the dev team burned all of their
-            tokens and participated with everyone else.
+          <h2 class="lang_community">Community driven</h2>
+          <p class="lang_community_p">
+            community driven & fair launch. the dev team burned all<br />of
+            their tokens and participated with everyone else.
           </p>
-          <h2>Automatic lp</h2>
-          <p>
-            every trade contributes towards automatically generating liquidity
-            that goes into multiple pools used by exchanges.
+          <h2 class="lang_automatic">Automatic lp</h2>
+          <p class="lang_automatic_p">
+            every trade contributes towards automatically generating<br />
+            liquidity that goes into multiple pools used by exchanges.
           </p>
-          <h2>rfi static rewards</h2>
-          <p>
-            holders earn passive rewards through static reflection as they watch
-            their balace of tzr grow indefinitely.
+          <h2 class="lang_rfi">rfi static rewards</h2>
+          <p class="lang_rfi_p">
+            holders earn passive rewards through static reflection<br />
+            as they watch their balace of tzr grow indefinitely.
           </p>
-        </div>
-        <div class="imageBG_wrapper">
-          <img src="assets/bg/graphic.png" alt="picture" />
         </div>
       </div>
     </section>
-    <section class="tokenomics_container">
+    <section id="tokenomics" class="tokenomics_container">
       <ul class="partner_list">
         <li>
-          <a href="#"><img src="assets/logo/BS.png" alt="BS" /></a>
+          <a
+            href="https://bscscan.com/token/0xdd71a543245a2ff8bda8cf02b4f9ad2d2f196792"
+            target="_blank"
+            ><img src="assets/logo/BS.png" alt="BS"
+          /></a>
         </li>
         <li>
           <a href="#"><img src="assets/logo/CG.png" alt="CG" /></a>
@@ -123,17 +154,22 @@
           <a href="#"><img src="assets/logo/coinmc.png" alt="CN" /></a>
         </li>
         <li>
-          <a href="#"><img src="assets/logo/PS.png" alt="PS" /></a>
+          <a
+            href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xdd71a543245a2ff8bda8cf02b4f9ad2d2f196792"
+            target="_blank"
+            ><img src="assets/logo/PS.png" alt="PS"
+          /></a>
         </li>
       </ul>
 
       <div class="tokenomics_description_wrapper">
-        <h2>Tokenomics</h2>
-        <p>
-          tzr is a stealth launched, community driven, defi token programmed to
-          reward holders through its frictionless yield and liquidity generation
-          protocol hard-coded into the tzr contract are the following
-          tokenomics, we are unable to change them and are fully rug-proof.
+        <h2 class="lang_tok_title">Tokenomics</h2>
+        <p class="lang_tok_p">
+          tzr is a stealth launched, community driven, defi token programmed<br />
+          to reward holders through its frictionless yield and liquidity
+          generation protocol<br />
+          hard-coded into the tzr contract are the following tokenomics,<br />
+          we are unable to change them and are fully rug-proof.
         </p>
       </div>
       <div class="info_advantage_wrapper">
@@ -141,28 +177,36 @@
           <div class="wrapper_image_planet">
             <img src="./assets/descriptions/planet.png" alt="planet" />
           </div>
-          <p class="advantage_text">10% tax on every transaction</p>
+          <p class="advantage_text lang_advantage_left">
+            10% tax on every transaction
+          </p>
         </div>
         <div class="advantage_item">
           <div class="wrapper_image_planet">
             <img src="./assets/descriptions/shield.png" alt="shield" />
           </div>
-          <p class="advantage_text">
-            15% from tax of each transaction is redirected to the liquidity
+          <p class="advantage_text lang_advantage_center">
+            15% from tax of<br />
+            each transaction<br />
+            is redirected to the liquidity
           </p>
         </div>
         <div class="advantage_item">
           <div class="wrapper_image_planet">
             <img src="./assets/descriptions/wallet.png" alt=wallet" />
           </div>
-          <p class="advantage_text">
-            redistributed 15% of tax among all current token holders
+          <p class="advantage_text lang_advantage_right">
+            redistributed 15% of tax<br />
+            among all current<br />
+            token holders
           </p>
         </div>
       </div>
     </section>
-    <section class="team_container">
-      <div class="title_team_wrapper"><span>our team</span></div>
+    <section id="team" class="team_container">
+      <div class="title_team_wrapper">
+        <span class="lng_team_title">our team</span>
+      </div>
       <div class="grid_list_photo">
         <div class="item_wrapper">
           <div class="photo_wrapper">
@@ -170,7 +214,7 @@
           </div>
           <div class="description_user">
             <span class="user_name">George walker</span>
-            <span class="user_job">Executive Director</span>
+            <span class="user_job lng_team_walker">Executive Director</span>
           </div>
         </div>
         <div class="item_wrapper">
@@ -179,7 +223,7 @@
           </div>
           <div class="description_user">
             <span class="user_name">alybek koom</span>
-            <span class="user_job">Strategy Director</span>
+            <span class="user_job lng_team_koom">Strategy Director</span>
           </div>
         </div>
         <div class="item_wrapper">
@@ -188,7 +232,7 @@
           </div>
           <div class="description_user">
             <span class="user_name">konor peters</span>
-            <span class="user_job">Marketing Director</span>
+            <span class="user_job lng_team_peters">Marketing Director</span>
           </div>
         </div>
         <div class="item_wrapper">
@@ -197,7 +241,7 @@
           </div>
           <div class="description_user">
             <span class="user_name">aya ito</span>
-            <span class="user_job">Creative Director</span>
+            <span class="user_job lng_team_ito">Creative Director</span>
           </div>
         </div>
         <div class="item_wrapper">
@@ -205,8 +249,8 @@
             <img src="assets/photo/ph5.png" alt="ph1" />
           </div>
           <div class="description_user">
-            <span class="user_name">alybek koom</span>
-            <span class="user_job">Strategy Director</span>
+            <span class="user_name">harry bell</span>
+            <span class="user_job lng_team_bell">Social Media Director</span>
           </div>
         </div>
         <div class="item_wrapper">
@@ -214,54 +258,56 @@
             <img src="assets/photo/ph6.png" alt="ph1" />
           </div>
           <div class="description_user">
-            <span class="user_name">alybek koom</span>
-            <span class="user_job">Strategy Director</span>
+            <span class="user_name">alex kirilenko</span>
+            <span class="user_job lng_team_alex">web developer</span>
           </div>
         </div>
       </div>
     </section>
-    <section class="roadmap_container">
-      <div class="gagarin_wrapper">
-        <img src="assets/bg/spacemen.png" alt="spacemen" />
-      </div>
+    <section id="roadmap" class="roadmap_container">
       <div class="roudmap_content_wrapper">
         <div class="left_content">
-          <h2>INITIAL EXPOSURE</h2>
-          <p>Advertising, influencers marketing push</p>
-          <h2>COMMUNITY 65%</h2>
-          <p>
+          <h2 class="lng_init_title">INITIAL EXPOSURE</h2>
+          <p class="lng_init_p">Advertising, influencers marketing push</p>
+          <h2 class="lng_com_title">COMMUNITY 65%</h2>
+          <p class="lng_com_p">
             Fudders and people that came for a quick buck are starting to leave
             out of boredom, wholesome community is building
           </p>
-          <h2>FURTHER EXPOSURE</h2>
-          <p>We are preparing soon for a second marketing push</p>
-          <h2>TO THE STARS</h2>
-          <p>Much more to come!</p>
+          <h2 class="lng_fur_title">FURTHER EXPOSURE</h2>
+          <p class="lng_fur_p">
+            We are preparing soon for a second marketing push
+          </p>
+          <h2 class="lng_star_title">TO THE STARS</h2>
+          <p class="lng_star_p">Much more to come!</p>
         </div>
         <div class="red_line"></div>
         <div class="right_content">
-          <h2 class="title_red">Ilaunch</h2>
-          <p>tzr is born and a new journey start.</p>
-          <h2>CORE TEAM BUILDING</h2>
-          <p>We are at 50% at the moment and looking for some new members</p>
-          <h2>PRODUCT DEVELOPMENT 40%</h2>
-          <p>
+          <h2 class="title_red lang_red_title">Ilaunch</h2>
+          <p class="lang_red_p">tzr is born and a new journey start.</p>
+          <h2 class="lang_core_title">CORE TEAM BUILDING</h2>
+          <p class="lang_core_p">
+            We are at 50% at the moment and looking for some new members
+          </p>
+          <h2 class="lang_prod_title">PRODUCT DEVELOPMENT 40%</h2>
+          <p class="lang_prod_p">
             We are working on a new website, talking with a dev to bring a dApp
             and NFT shop
           </p>
-          <h2>PARTNERSHIPS 30%</h2>
-          <p>
+          <h2 class="lang_part_title">PARTNERSHIPS 30%</h2>
+          <p class="lang_part_p">
             We are in the talks with 2 big projects to collaborate with, this
             will boost us even more than cmc and cg listing
           </p>
         </div>
       </div>
+      <div class="gagarin_wrapper"></div>
     </section>
-    <footer class="footer_container">
+    <footer id="footer" class="footer_container">
       <div class="content_footer_wrapper">
         <div class="footer_text">
-          <h2>tzr protocol</h2>
-          <p>
+          <h2 class="lng_footer_title">tzr protocol</h2>
+          <p class="lng_footer_p">
             the tzr protocol is a community driven, fair launched defi token.
             three simple function occur during each trade: lp acquisition,
             reflection, burn.
@@ -270,7 +316,9 @@
         <div class="social_list_wrapper">
           <div class="social_item">
             <p>telegram</p>
-            <button class="social_btn telega"><a href="#"></a></button>
+            <button class="social_btn telega">
+              <a href="https://t.me/TREZOR_FINANCE" target="_blank"></a>
+            </button>
           </div>
           <div class="social_item">
             <p>twitter</p>
@@ -290,5 +338,7 @@
         </div>
       </div>
     </footer>
+    <script src="./lang/lang.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -10,16 +10,15 @@
   justify-content: center;
   align-items: center;
   span {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 9rem;
+    line-height: 9.8rem;
   }
 }
 
 .grid_list_photo {
   padding: 90px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 400px));
-  grid-template-rows: repeat(2, minmax(250px, 450px));
+  grid-template-columns: repeat(3, minmax(280px, 400px));
   align-items: center;
   justify-content: center;
   grid-gap: 2rem;
@@ -48,11 +47,15 @@
   background: white;
   border-radius: 10px;
   color: #1f4dcb;
+  text-align: center;
+  padding: 10px 0;
   .user_name {
-    font-size: 2.1rem;
+    font-size: 4.6rem;
+    line-height: 3.5rem;
   }
   .user_job {
-    font-size: 1.6rem;
+    font-size: 4.2rem;
+    line-height: 4.6rem;
   }
 }
 
@@ -60,5 +63,86 @@
   overflow: hidden;
   img {
     height: 112%;
+  }
+}
+
+@include respond-to(max-large) {
+  .title_team_wrapper {
+    height: 110px;
+    span {
+      font-size: 8rem;
+      line-height: 8.5rem;
+    }
+  }
+  .grid_list_photo {
+    padding: 70px;
+    grid-template-columns: repeat(3, minmax(240px, 400px));
+  }
+  .photo_wrapper {
+    height: 280px;
+  }
+  .description_user {
+    .user_name {
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+    .user_job {
+      font-size: 3.7rem;
+      line-height: 4.1rem;
+    }
+  }
+}
+
+@include respond-to(max-midle) {
+  .title_team_wrapper {
+    height: 90px;
+    span {
+      font-size: 6rem;
+      line-height: 6.5rem;
+    }
+  }
+  .grid_list_photo {
+    padding: 60px;
+    grid-template-columns: repeat(2, minmax(200px, 400px));
+  }
+  .photo_wrapper {
+    height: 220px;
+  }
+  .description_user {
+    .user_name {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+    .user_job {
+      font-size: 2.7rem;
+      line-height: 3.1rem;
+    }
+  }
+}
+
+@include respond-to(mini-midle) {
+  .title_team_wrapper {
+    height: 60px;
+    span {
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+  }
+  .grid_list_photo {
+    padding: 40px;
+    grid-template-columns: repeat(2, minmax(130px, 400px));
+  }
+  .photo_wrapper {
+    height: 150px;
+  }
+  .description_user {
+    .user_name {
+      font-size: 1.7rem;
+      line-height: 2.2rem;
+    }
+    .user_job {
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+    }
   }
 }
