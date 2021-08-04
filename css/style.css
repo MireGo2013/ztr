@@ -536,8 +536,8 @@
   .btn_action_wrapper .btn_action {
     width: 150px;
     height: 37px;
-    font-size: 1.7rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
   }
   .btn_action_wrapper .btn_action + .btn_action {
     margin-left: 10px;
