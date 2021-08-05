@@ -60,7 +60,7 @@ const langArr = {
     en: "tzr is a stealth launched, community driven, defi token programmed<br /> to reward holders through its frictionless yield and liquidity generation protocol<br /> hard-coded into the tzr contract are the following tokenomics,<br /> we are unable to change them and are fully rug-proof.",
   },
   lang_advantage_left: {
-    ru: "10% сборов с каждой транзакции",
+    ru: "10% сборов с<br /> каждой транзакции",
     en: "10% tax on every transaction",
   },
   lang_advantage_center: {
