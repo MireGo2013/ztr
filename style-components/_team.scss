@@ -32,6 +32,8 @@
 .photo_wrapper {
   height: 370px;
   font-size: 0;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
   img {
     height: 100%;
     width: 100%;
@@ -45,10 +47,11 @@
   justify-content: center;
   align-items: center;
   background: white;
-  border-radius: 10px;
+  border-radius: 0 0 5px 5px;
   color: #1f4dcb;
   text-align: center;
   padding: 10px 0;
+  transform: translateY(-7px);
   .user_name {
     font-size: 4.6rem;
     line-height: 3.5rem;

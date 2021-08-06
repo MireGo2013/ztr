@@ -1,17 +1,15 @@
 .header_container {
-  height: 1080px;
   background-image: url("../assets/bg/bg1.png");
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-  @include respond-to(max-large) {
-    height: 880px;
-  }
+}
 
-  @include respond-to(midle) {
-    height: 900px;
-  }
+.opacity {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .navigation_container {
@@ -73,28 +71,24 @@
 }
 
 .logo_container {
+  background-image: url("../assets/logo/logoSvg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 50px;
   height: 75px;
 
-  .logo {
-    width: 100%;
-    max-height: 100%;
-  }
-  @include respond-to(max-large) {
-    width: 45px;
-    height: 70px;
-  }
   @include respond-to(max-midle) {
-    width: 35px;
-    height: 60px;
-  }
-  @include respond-to(midle) {
-    width: 30px;
+    width: 45px;
     height: 55px;
   }
-  @include respond-to(mini-midle) {
-    width: 25px;
+  @include respond-to(midle) {
+    width: 40px;
     height: 50px;
+  }
+  @include respond-to(mini-midle) {
+    width: 35px;
+    height: 40px;
   }
 }
 
@@ -168,7 +162,7 @@
   }
 
   @include respond-to(max-large) {
-    width: 140px;
+    width: 120px;
     height: 45px;
   }
 
@@ -183,7 +177,6 @@
 }
 
 .content_header_wrapper {
-  height: 100%;
   margin: 0 auto;
   padding: 218px 10px 0 10px;
   .title {
@@ -330,15 +323,16 @@
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+  margin-bottom: 60px;
   .btn_action {
     width: 219px;
     height: 58px;
     border-radius: 29px;
     border: none;
     background: none;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     cursor: pointer;
     font-size: 2.8rem;
     line-height: 3rem;
@@ -372,6 +366,7 @@
   }
 
   @include respond-to(max-large) {
+    margin-bottom: 50px;
     .btn_action {
       width: 210px;
       height: 55px;
@@ -380,6 +375,7 @@
     }
   }
   @include respond-to(max-midle) {
+    margin-bottom: 40px;
     .btn_action {
       width: 180px;
       height: 45px;
@@ -391,15 +387,52 @@
     }
   }
   @include respond-to(mini-midle) {
+    margin-bottom: 30px;
     .btn_action {
       width: 150px;
-      height: 37px;
+      height: 40px;
       font-size: 1.5rem;
       line-height: 1.9rem;
       & + .btn_action {
         margin-left: 10px;
       }
     }
+  }
+  @include respond-to(max-mini) {
+    margin-bottom: 27px;
+    .btn_action {
+      width: 145px;
+      height: 30px;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+      & + .btn_action {
+        margin-left: 9px;
+      }
+    }
+  }
+}
+
+.lng_join_p {
+  font-size: 2.8rem;
+  line-height: 3rem;
+  text-align: center;
+  padding-bottom: 230px;
+  @include respond-to(max-large) {
+    font-size: 2.6rem;
+    line-height: 2.9rem;
+    // padding-bottom: 230px;
+  }
+  @include respond-to(max-midle) {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+  }
+  @include respond-to(mini-midle) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  @include respond-to(max-mini) {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
   }
 }
 
@@ -410,7 +443,7 @@
   line-height: 1.9rem;
   background: rgba($color: #040000, $alpha: 0.5);
   position: absolute;
-  top: calc(100% - 150px);
+  top: calc(100% - 130px);
   left: calc(100% - 138px);
   @include respond-to(max-midle) {
     width: 110px;

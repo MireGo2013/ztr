@@ -1,5 +1,8 @@
 .about_container {
-  background: #313280;
+  background-image: url("../assets/bg/bg2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .data_profit_wrapper {
@@ -12,7 +15,7 @@
   text-align: center;
 
   li + li {
-    margin-left: 140px;
+    margin-left: 130px;
   }
   .profit {
     font-size: 3.2rem;
@@ -25,7 +28,7 @@
   @include respond-to(max-large) {
     height: 150px;
     li + li {
-      margin-left: 90px;
+      margin-left: 70px;
     }
     .profit {
       font-size: 3rem;
@@ -101,11 +104,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-image: url("../assets/bg/graphic.png");
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-
   @include respond-to(max-large) {
     padding: 200px 0 200px 200px;
     .advantages_wrapper {

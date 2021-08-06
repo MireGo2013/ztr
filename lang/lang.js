@@ -34,6 +34,10 @@ const langArr = {
   lng_buy_header: { ru: "купить tzr", en: "buy tzr" },
   lng_swap_header: { ru: "обменять tzr", en: "swap tzr" },
   lng_join_header: { ru: "телеграмм чат", en: "join telegram" },
+  lng_join_p: {
+    ru: "Присоединяйся к нашему сообществу<br /> в телеграмм чате и получай свежие новости<br /> каждый день",
+    en: "join our community on telegram<br /> to get fresh news every day",
+  },
   lng_current_price: { ru: "текущая стоимость", en: "current price" },
   lng_holders: { ru: "держатели", en: "holders" },
   lng_supply: { ru: "объем", en: "supply" },
@@ -61,7 +65,7 @@ const langArr = {
   },
   lang_advantage_left: {
     ru: "10% сборов с<br /> каждой транзакции",
-    en: "10% tax on every transaction",
+    en: "10% tax on every<br /> transaction",
   },
   lang_advantage_center: {
     ru: "15% из сборов<br /> с каждой транзакции<br /> перенаправляется в<br /> ликвидность",
@@ -85,17 +89,17 @@ const langArr = {
   },
   lng_com_title: { ru: "сообщество 65%", en: "COMMUNITY 65%" },
   lng_com_p: {
-    ru: "Скептики и люди пришедшие за моментальной выгодой вскоре начнут уходить от скуки и сообщество окрепнет",
-    en: "Fudders and people that came for a quick buck are starting to leave out of boredom, wholesome community is building",
+    ru: "Скептики и люди пришедшие за моментальной выгодой<br /> вскоре начнут уходить от скуки и сообщество окрепнет",
+    en: "Fudders and people that came for a quick buck are<br /> starting to leave out of boredom, wholesome community is building",
   },
   lng_fur_title: { ru: "дальнейшее продвижение", en: "FURTHER EXPOSURE" },
   lng_fur_p: {
     ru: "подготовка ко второму маркетинговому рывку",
     en: "We are preparing soon for a second marketing push",
   },
-  lng_star_title: { ru: "TO THE STARS", en: "TO THE STARS" },
-  lng_star_p: { ru: "Much more to come!", en: "Much more to come!" },
-  lang_red_title: { ru: "запуск!", en: "Ilaunch" },
+  lng_star_title: { ru: "к звездам!", en: "TO THE STARS" },
+  lng_star_p: { ru: "только вперед!", en: "Much more to come!" },
+  lang_red_title: { ru: "запуск!", en: "launch" },
   lang_red_p: {
     ru: "tzr запускается и путешествие начинается.",
     en: "tzr is born and a new journey start.",

@@ -1,22 +1,14 @@
 .roadmap_container {
-  background-image: url("../assets/bg/bg.png");
+  background-image: url("../assets/bg/bg4.png");
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
-  overflow: hidden;
 }
 
-.gagarin_wrapper {
+.opacity_map {
   width: 100%;
   height: 100%;
-  background-image: url("../assets/bg/spacemen.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: initial;
-  transform: translateY(250px);
-  position: absolute;
-  top: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .roudmap_content_wrapper {
@@ -24,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   h2 {
     font-size: 4.8rem;
     line-height: 5.2rem;
@@ -35,24 +28,24 @@
   }
 
   .left_content {
+    flex: 1;
     text-align: end;
-    z-index: 1;
+    padding-right: 10px;
+    &:last-child {
+      padding: 0;
+    }
   }
 
   .right_content {
+    flex: 1;
     text-align: start;
-    z-index: 1;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    border-left: 2px solid #c02e5b;
 
     .title_red {
       color: #c02e5b;
     }
-  }
-
-  .red_line {
-    height: calc(100vh + 180px);
-    border: 1px solid #c02e5b;
-    z-index: 1;
-    margin: 0 10px;
   }
 }
 
@@ -67,9 +60,6 @@
       font-size: 1.5rem;
       line-height: 2rem;
       padding-bottom: 25px;
-    }
-    .red_line {
-      height: calc(100vh + 80px);
     }
   }
 }
@@ -86,9 +76,6 @@
       line-height: 2.1rem;
       padding-bottom: 35px;
     }
-    .red_line {
-      height: calc(100vh + 110px);
-    }
   }
 }
 
@@ -103,9 +90,6 @@
       font-size: 2.2rem;
       line-height: 2.7rem;
       padding-bottom: 50px;
-    }
-    .red_line {
-      height: calc(100vh + 140px);
     }
   }
 }
